@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		2D1049A228C3D4C900BB0F86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1049A128C3D4C900BB0F86 /* AppDelegate.swift */; };
 		2D1049A428C3D4C900BB0F86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1049A328C3D4C900BB0F86 /* SceneDelegate.swift */; };
-		2D1049A628C3D4C900BB0F86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1049A528C3D4C900BB0F86 /* ViewController.swift */; };
 		2D1049A928C3D4C900BB0F86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1049A728C3D4C900BB0F86 /* Main.storyboard */; };
 		2D1049AB28C3D4CD00BB0F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1049AA28C3D4CD00BB0F86 /* Assets.xcassets */; };
 		2D1049AE28C3D4CD00BB0F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1049AC28C3D4CD00BB0F86 /* LaunchScreen.storyboard */; };
+		2D82568128CA71F100C5DE2D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1049A528C3D4C900BB0F86 /* EditViewController.swift */; };
+		2D82568328CA783000C5DE2D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D82568228CA783000C5DE2D /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D10499E28C3D4C900BB0F86 /* SB-HW-2.2.1-sliders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SB-HW-2.2.1-sliders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1049A128C3D4C900BB0F86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D1049A328C3D4C900BB0F86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D1049A528C3D4C900BB0F86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D1049A528C3D4C900BB0F86 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		2D1049A828C3D4C900BB0F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D1049AA28C3D4CD00BB0F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1049AD28C3D4CD00BB0F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D1049AF28C3D4CD00BB0F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D82568228CA783000C5DE2D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				2D1049A128C3D4C900BB0F86 /* AppDelegate.swift */,
 				2D1049A328C3D4C900BB0F86 /* SceneDelegate.swift */,
-				2D1049A528C3D4C900BB0F86 /* ViewController.swift */,
+				2D1049A528C3D4C900BB0F86 /* EditViewController.swift */,
+				2D82568228CA783000C5DE2D /* StartViewController.swift */,
 				2D1049A728C3D4C900BB0F86 /* Main.storyboard */,
 				2D1049AA28C3D4CD00BB0F86 /* Assets.xcassets */,
 				2D1049AC28C3D4CD00BB0F86 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1049A628C3D4C900BB0F86 /* ViewController.swift in Sources */,
 				2D1049A228C3D4C900BB0F86 /* AppDelegate.swift in Sources */,
+				2D82568328CA783000C5DE2D /* StartViewController.swift in Sources */,
 				2D1049A428C3D4C900BB0F86 /* SceneDelegate.swift in Sources */,
+				2D82568128CA71F100C5DE2D /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
