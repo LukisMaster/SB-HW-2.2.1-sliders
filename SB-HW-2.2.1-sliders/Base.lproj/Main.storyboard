@@ -26,7 +26,7 @@
                                             <imageReference key="image" image="square.and.pencil" catalog="system" symbolScale="large"/>
                                             <inset key="largeContentSizeImageInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="0co-Qu-MKM"/>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="editViewSegue" destinationCreationSelector="editViewSegue:sender:" modalPresentationStyle="fullScreen" id="0co-Qu-MKM"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -158,26 +158,26 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="exi-6S-FVX">
                                 <rect key="frame" x="313" y="176" width="46" height="122"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ZO-po-Jzo">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" placeholder="255" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ZO-po-Jzo">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="35.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
                                             <action selector="changeTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="OTM-Q1-H6u"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-2O-hAD">
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" placeholder="255" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-2O-hAD">
                                         <rect key="frame" x="0.0" y="43.5" width="46" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
                                             <action selector="changeTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qIK-nT-PuG"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-Z1-uhN">
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" placeholder="255" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-Z1-uhN">
                                         <rect key="frame" x="0.0" y="86.5" width="46" height="35.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
                                             <action selector="changeTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="sqe-wm-YVt"/>
                                         </connections>

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol EditViewControllerDelegate : AnyObject {
-    func saveColor (color: UIColor)
+    func saveColor (color: [CGFloat])
 }
 
 class EditViewController: UIViewController {
@@ -30,7 +30,7 @@ class EditViewController: UIViewController {
     
     weak var delegate : EditViewControllerDelegate?
     
-    var rgba : [CGFloat] = [255, 255, 255, 255]
+    var rgba : [CGFloat] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +66,8 @@ class EditViewController: UIViewController {
         blueText.text = String(Int(rgba[2]))
     }
     
+    
+    
     // MARK: Action func
     @IBAction func changeSlider(_ sender: UISlider) {
         rgba[sender.tag] = CGFloat(sender.value)
@@ -83,7 +85,7 @@ class EditViewController: UIViewController {
     
     // MARK: Delegate func
     @IBAction func doneButton() {
-        delegate?.saveColor(color: colorView.backgroundColor!)
+        delegate?.saveColor(color: rgba)
         dismiss(animated: true)
     }
     
