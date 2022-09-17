@@ -163,7 +163,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
-                                            <action selector="changeTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="OTM-Q1-H6u"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="egK-eJ-WkV"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" placeholder="255" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-2O-hAD">
@@ -171,7 +171,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
-                                            <action selector="changeTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qIK-nT-PuG"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="as9-NJ-EIS"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" placeholder="255" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-Z1-uhN">
@@ -179,7 +179,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
-                                            <action selector="changeTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="sqe-wm-YVt"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="a3n-jD-icf"/>
                                         </connections>
                                     </textField>
                                 </subviews>
